@@ -1,0 +1,44 @@
+[project]
+name = "python-alphavss"
+version = "0.0.1.1"
+authors = [
+  { name="Steven Manross", email="steven@manross.net" },
+]
+maintainers = [
+  { name="Steven Manross", email="steven@manross.net" },
+]
+description = "Python wrapper for ALphaVSS .NET Framework Code (Microsoft Volume ShadowCopy Service) exposed through pythonnet (clr)"
+dependencies = [
+    'WMI==1.5.1',
+    'pythonnet>=2.5.2'
+]
+keywords = [
+  "alphavss",
+  "vss",
+  "shadowcopyset",
+  "shadowcopy",
+  "volumeshadowcopyservice",
+  "snapshot",
+  "windows",
+  "pythonnet",
+  "clr",
+]
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/smanross/python-alphavss"
+"Bug Tracker" = "https://github.com/smanross/python-alphavss/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+include-package-data = true

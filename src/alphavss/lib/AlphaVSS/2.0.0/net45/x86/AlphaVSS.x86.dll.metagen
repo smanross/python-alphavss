@@ -1,0 +1,59 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly AlphaVSS.x86, Version=1.0.0.0, Culture=neutral, PublicKeyToken=959d3993561034e3: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly AlphaVSS.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=959d3993561034e3: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Alphaleonis.Win32.Vss.VssDifferentialSoftwareSnapshotManagement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.MarshalByRefObject
+  Interfaces:
+    Alphaleonis.Win32.Vss.IVssDifferentialSoftwareSnapshotManagement
+    System.IDisposable
+  Methods:
+    AddDiffArea(String, String, Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ChangeDiffAreaMaximumSize(String, String, Int64, Boolean(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ChangeDiffAreaMaximumSize(String, String, Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryDiffAreasForSnapshot(Guid): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryDiffAreasForVolume(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryDiffAreasOnVolume(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    QueryVolumesSupportedForDiffAreas(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearVolumeProtectFault(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteUnusedDiffAreas(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetVolumeProtectionLevel(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetVolumeProtectionLevel(String, VssProtectionLevel): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class Alphaleonis.Win32.Vss.VssFactory: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.MarshalByRefObject
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Alphaleonis.Win32.Vss.IVssFactory
+  Methods:
+    CreateVssBackupComponents(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateVssExamineWriterMetadata(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateVssSnapshotManagement(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetInfoProvider(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Alphaleonis.Win32.Vss.VssInformationProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.MarshalByRefObject
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Alphaleonis.Win32.Vss.IVssInfoProvider
+  Methods:
+    IsVolumeSnapshotted(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSnapshotCompatibility(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShouldBlockRevert(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Alphaleonis.Win32.Vss.VssSnapshotManagement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.MarshalByRefObject
+  Interfaces:
+    Alphaleonis.Win32.Vss.IVssSnapshotManagement
+    System.IDisposable
+  Methods:
+    GetDifferentialSoftwareSnapshotManagementInterface(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetMinDiffAreaSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

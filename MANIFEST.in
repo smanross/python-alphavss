@@ -1,0 +1,8 @@
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x64/*.dll
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x64/*.xml
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x64/*.metagen
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x64/*.pdb
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x86/*.dll
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x86/*.xml
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x86/*.metagen
+include src/alphavss/lib/AlphaVSS/2.0.0/net45/x86/*.pdb
