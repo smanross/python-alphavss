@@ -4,6 +4,7 @@
     Requires:
      * AlphaVSS compiled .NET Framework DLLs (free source code, they just need to be compiled with Visual Studio and .NET Framework 4.5)
             https://github.com/alphaleonis/AlphaVSS/
+            * I've included the version 2.0.0 binary DLLs for Windows (compiled on Windows Server 2016 if it matters from Visual Studio 2019) 
      * python pip package: pythonnet (import clr)
      * My Python Classes (alphavss)
 '''
@@ -11,7 +12,8 @@
 import os
 from os.path import exists
 import time
-from alphavss.models import VSSProvider, ExposedRemotely, AppRollback
+from alphavss.models import VSSProvider
+from alphavss.constants import ExposedRemotely, AppRollback
 import Alphaleonis.Win32.Vss as alphavsslib #pylint:disable=E0401,C0413
 
 
