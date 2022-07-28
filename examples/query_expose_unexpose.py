@@ -5,6 +5,7 @@
      * AlphaVSS compiled .NET Framework DLLs (free source code, they just need to be compiled with Visual Studio and .NET Framework 4.5)
             https://github.com/alphaleonis/AlphaVSS/
      * python pip package: pythonnet (import clr)
+     * python pip package: wmi (import wmi)
      * My Python Classes (alphavss)
 '''
 
